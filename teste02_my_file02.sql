@@ -1,6 +1,7 @@
 set serveroutput on
-
+declare
+  w_date;
 begin
-  select sysdate from dual;
+  select sysdate into w_date from dual;
 end;
 /
