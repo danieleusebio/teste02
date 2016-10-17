@@ -1,7 +1,8 @@
 set serveroutput on
-declare
-  w_date;
+
+var w_date;
+
 begin
-  select sysdate into w_date from dual;
+  select sysdate into :w_date from dual;
 end;
 /
