@@ -1,12 +1,8 @@
 set serveroutput on
 
-set linesize 10000
+var w_date;
 
-declare
-  w_date;
 begin
-  select sysdate into w_date from dual;
-  
-  dbms_output.put_line('Data e hora:'||w_date);
+  select sysdate into :w_date from dual;
 end;
 /
